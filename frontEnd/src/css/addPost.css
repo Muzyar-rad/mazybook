@@ -1,0 +1,94 @@
+div.addpost {
+  background-color: #b4bbb8;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.addpost > div.userFlex {
+  background-color: #b4bbb8;
+  display: flex;
+  height: 50px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+div.addpost > div.userFlex > img {
+  margin: 10px 0px 0px 5px;
+  width: 6%;
+  height: 60%;
+}
+
+div.addpost > div.userFlex > p.user {
+  margin: 13px 0px 0px 2px;
+}
+
+div.addpost > form.css {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background-image: linear-gradient(white, grey);
+  margin: 0px 0px 0px 0px;
+  height: 400px;
+}
+
+div.addpost > form.css > textarea.css {
+  font-size: 110%;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 75%;
+  resize: none;
+}
+
+div.addpost > form.css > button.css {
+  margin: 0px 0px 0px 0px;
+  align-self: center;
+  width: 65px;
+  height: 35px;
+}
+
+div.addpost > form.css > button.css:hover {
+  cursor: pointer;
+}
+
+div.addpost > form.css > i {
+  margin-right: auto;
+  font-size: 150%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+div.addpost > form.css > i:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
+  div.addpost {
+    background-color: #b4bbb8;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.addpost > div.userFlex > img {
+    margin: 10px 0px 0px 1px;
+    width: 13%;
+    height: 65%;
+  }
+  div.addpost > form.css > button.css {
+    margin: auto;
+    width: 65px;
+    height: 35px;
+  }
+  div.addpost > form.css > i {
+    margin-right: auto;
+    font-size: 150%;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+}

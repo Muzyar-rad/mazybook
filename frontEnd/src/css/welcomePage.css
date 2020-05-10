@@ -1,0 +1,10 @@
+div.text {
+  font-size: 150%;
+  text-align: center;
+  line-height: 600px;
+  height: 600px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+}

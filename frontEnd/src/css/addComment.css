@@ -1,0 +1,36 @@
+form.addComment {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 80px;
+}
+
+form.addComment > textarea {
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  flex-basis: 470px;
+  margin: 10px 2px 10px 10px;
+  resize: none;
+}
+
+form.addComment > button {
+  right: 50px;
+  left: 27px;
+  align-self: center;
+  margin: 10px 10px 10px 39px;
+}
+@media only screen and (max-width: 400px) {
+  form.addComment > textarea {
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    flex-basis: 400px;
+    margin: 10px 0px 10px 10px;
+    resize: none;
+  }
+  form.addComment > button {
+    right: 50px;
+    left: 27px;
+    align-self: center;
+    margin: 10px 15px 10px 39px;
+  }
+}

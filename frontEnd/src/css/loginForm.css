@@ -1,0 +1,22 @@
+form.loginCss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0px 0px 0px;
+}
+form > p.User {
+  font-size: 160%;
+  margin: 30px 140px 0px 0px;
+}
+form > input.User {
+  width: 250px;
+}
+form > p.Pass {
+  font-size: 160%;
+  margin: 30px 145px 0px 0px;
+}
+form > input.Pass {
+  width: 250px;
+}
+@media only screen and (max-width: 600px) {
+}

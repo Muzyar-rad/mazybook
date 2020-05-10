@@ -1,0 +1,79 @@
+div.comment {
+  background-color: #b4bbb8;
+  border: 2px solid #ccc;
+  height: 20%;
+  width: 100%;
+  margin-top: 1px;
+  overflow: auto;
+}
+
+div.comment > div.flex {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: auto;
+}
+
+div.comment > div.flex > img {
+  margin: 20px 0px 0px 10px;
+  width: 50px;
+  height: 50px;
+}
+
+div.comment > div.flex > div.holder {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 8px 8px 8px 10px;
+  width: 90%;
+  overflow: auto;
+}
+div.comment > div.flex > div.holder > div.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+div.comment > div.flex > div.holder > div.flexRow > p.user {
+  margin-left: 5px;
+}
+
+div.comment > div.flex > div.holder > div.flexRow > i {
+  color: red;
+  margin-left: auto;
+  font-size: 100%;
+  margin-top: 2px;
+  margin-right: 3px;
+}
+
+div.comment > div.flex > div.holder > div.flexRow > i:hover {
+  cursor: pointer;
+}
+div.comment > div.flex > div.holder > p.text {
+  margin: -16px 0px 0px 5px;
+  height: 42%;
+  width: 96%;
+  overflow-wrap: break-word;
+}
+
+div.comment > div.flex > div.holder > p.commentDate {
+  margin: 5px 5px 5px 5px;
+  font-size: 70%;
+  width: 96%;
+  height: 96%;
+  background-color: white;
+  color: grey;
+}
+@media only screen and (max-width: 400px) {
+  div.comment > div.flex > img {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+  }
+  div.comment > div.flex > div.holder {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 8px 8px 8px 3px;
+    width: 90%;
+    overflow: auto;
+  }
+}
