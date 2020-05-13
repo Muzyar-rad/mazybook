@@ -52,8 +52,7 @@ class PostItem extends Component {
   }
 
   fullPostImagePath(imageUrl) {
-    // return process.env.REACT_APP_IMAGE_URI + `${imageUrl}`;
-    return `http://13.58.45.153/${imageUrl}`;
+    return process.env.REACT_APP_IMAGE_URI + `${imageUrl}`;
   }
   render() {
     const { postid, postImage, text, createdAt, name } = this.props.post;
