@@ -26,6 +26,10 @@ Try the application live at [here](http://13.58.45.153)
 
 ## Preview
 
+![mazybook1](readme_gif/mazybook1.gif)
+![mazybook2](readme_gif/mazybook2.gif)
+![mazybook3](readme_gif/mazybook3.gif)
+
 ## Colaborator
 
 Muzyar Rad aka. Mazy
