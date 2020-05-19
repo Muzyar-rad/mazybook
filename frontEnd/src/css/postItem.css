@@ -54,6 +54,7 @@ div.post > div.data {
 div.post > div.data > p.text {
   overflow-wrap: break-word;
   width: 100%;
+  margin: 4px 4px 4px 4px;
 }
 div.post > div.data > img {
   width: 100%;
