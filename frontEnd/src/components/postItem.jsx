@@ -56,6 +56,7 @@ class PostItem extends Component {
   }
   render() {
     const { postid, postImage, text, createdAt, name } = this.props.post;
+    const userName = this.props.user.name;
     let imagePath = null;
     if (postImage != null) imagePath = this.fullPostImagePath(postImage);
     const postTimestamp = this.convertToDate(createdAt);
@@ -67,10 +68,12 @@ class PostItem extends Component {
             <p className="user">{name}</p>
             <p className="timeStamp">{postTimestamp}</p>
           </div>
-          <i
-            className="fa fa-trash"
-            onClick={() => this.props.delPost(postid)}
-          ></i>
+          {userName === name && (
+            <i
+              className="fa fa-trash"
+              onClick={() => this.props.delPost(postid)}
+            ></i>
+          )}
         </div>
         <div className="data">
           <p className="text">{text}</p>
