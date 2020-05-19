@@ -22,7 +22,7 @@ A full-stack mobile responsive Social Media Application for registering new user
 
 ## Live Demo
 
-Try the application live at [here](http://13.58.45.153)
+Try the application live at [http://mazybook.muzyar-rad.com]
 
 ## Preview
 
