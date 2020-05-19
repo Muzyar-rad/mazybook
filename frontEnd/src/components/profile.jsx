@@ -39,7 +39,7 @@ class Profile extends Component {
       <div className="profile">
         <div className="flexRow1">
           <h1>Profile</h1>
-          <i className="fa fa-trash delete" onClick={this.deleteUser}></i>
+          {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
         </div>
         <div className="flexRow2">
           <img alt="Profile pic" src={Avatar} width="70" height="70" />
