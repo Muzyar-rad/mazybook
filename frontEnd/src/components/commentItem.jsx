@@ -10,6 +10,7 @@ class CommentItem extends Component {
   }
   render() {
     const { textComment, createdAt, commentid, name } = this.props.comment;
+    const userName = this.props.user.name;
     const commentTimestamp = this.convertToDate(createdAt);
     return (
       <div className="comment">
@@ -18,10 +19,12 @@ class CommentItem extends Component {
           <div className="holder">
             <div className="flexRow">
               <p className="user">{name}</p>
-              <i
-                className="fa fa-trash"
-                onClick={() => this.props.delComment(commentid)}
-              ></i>
+              {userName === name && (
+                <i
+                  className="fa fa-trash"
+                  onClick={() => this.props.delComment(commentid)}
+                ></i>
+              )}
             </div>
             <p className="text">{textComment}</p>
             <p className="commentDate">{commentTimestamp}</p>

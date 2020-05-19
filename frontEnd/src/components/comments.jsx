@@ -10,6 +10,7 @@ class Comments extends Component {
         key={comment.commentid}
         comment={comment}
         delComment={this.props.delComment}
+        user={this.props.user}
       />
     ));
   }

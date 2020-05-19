@@ -84,7 +84,11 @@ class PostItem extends Component {
           postid={postid}
           addComment={this.addComment}
         />
-        <Comments comments={this.state.comments} delComment={this.delComment} />
+        <Comments
+          comments={this.state.comments}
+          delComment={this.delComment}
+          user={this.props.user}
+        />
       </div>
     );
   }
