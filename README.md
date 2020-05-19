@@ -1,6 +1,6 @@
 # Mazybook_social_media
 
-A full-stack Social Media Application for registering new users and posting text and images, also commenting under the posts
+A full-stack mobile responsive Social Media Application for registering new users and posting text and images, also commenting under the posts
 
 ## Technologies Used
 
@@ -22,7 +22,7 @@ A full-stack Social Media Application for registering new users and posting text
 
 ## Live Demo
 
-Try the application live at [here](http://13.58.45.153)
+Try the application live at http://mazybook.muzyar-rad.com
 
 ## Preview
 
