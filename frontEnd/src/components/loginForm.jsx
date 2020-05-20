@@ -73,9 +73,11 @@ class LoginForm extends Component {
             name="username"
             onChange={this.changeHandler}
           />
-          {errors["username"] && (
-            <div className="alert alert-danger">{errors["username"]}</div>
-          )}
+          <div className="errorUser">
+            {errors["username"] && (
+              <div className="alert alert-danger">{errors["username"]}</div>
+            )}
+          </div>
           <p className="Pass">Password</p>
           <input
             className="Pass"
@@ -83,9 +85,11 @@ class LoginForm extends Component {
             name="password"
             onChange={this.changeHandler}
           />
-          {errors["password"] && (
-            <div className="alert alert-danger">{errors["password"]}</div>
-          )}
+          <div className="errorPass">
+            {errors["password"] && (
+              <div className="alert alert-danger">{errors["password"]}</div>
+            )}
+          </div>
           <button className="btn-info btn-lg mt-5">Login</button>
         </form>
       </div>

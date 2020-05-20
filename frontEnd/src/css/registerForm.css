@@ -12,6 +12,12 @@ form.registerForm > p.userName {
 form.registerForm > input.userName {
   width: 250px;
 }
+form.registerForm > div.errorUsername {
+  margin-bottom: -20px;
+}
+form.registerForm > div.errorPassword {
+  margin-bottom: -20px;
+}
 form.registerForm > p.name {
   margin: 25px 185px 0px 0px;
   font-size: 160%;
@@ -19,6 +25,8 @@ form.registerForm > p.name {
 form.registerForm > input.name {
   width: 250px;
 }
-
+form.registerForm > div.errorName {
+  margin-bottom: -20px;
+}
 @media only screen and (max-width: 600px) {
 }

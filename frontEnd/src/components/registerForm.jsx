@@ -81,9 +81,11 @@ class RegisterForm extends Component {
           name="username"
           onChange={this.changeHandler}
         />
-        {errors["username"] && (
-          <div className="alert alert-danger">{errors["username"]}</div>
-        )}
+        <div className="errorUsername">
+          {errors["username"] && (
+            <div className="alert alert-danger">{errors["username"]}</div>
+          )}
+        </div>
 
         <p className="Pass">Password</p>
         <input
@@ -92,9 +94,11 @@ class RegisterForm extends Component {
           name="password"
           onChange={this.changeHandler}
         />
-        {errors["password"] && (
-          <div className="alert alert-danger">{errors["password"]}</div>
-        )}
+        <div className="errorPassword">
+          {errors["password"] && (
+            <div className="alert alert-danger">{errors["password"]}</div>
+          )}
+        </div>
         <p className="name">Name</p>
         <input
           className="name"
@@ -102,9 +106,11 @@ class RegisterForm extends Component {
           name="name"
           onChange={this.changeHandler}
         />
-        {errors["name"] && (
-          <div className="alert alert-danger">{errors["name"]}</div>
-        )}
+        <div className="errorName">
+          {errors["name"] && (
+            <div className="alert alert-danger">{errors["name"]}</div>
+          )}
+        </div>
         <button className="btn-info btn-lg mt-5">Register</button>
       </form>
     );
