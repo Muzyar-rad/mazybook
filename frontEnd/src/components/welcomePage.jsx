@@ -7,7 +7,7 @@ const WelcomePage = props => {
   return (
     <div className="welcome">
       Welcome to Mazybook <br />
-      <br /> This social media application requires a username and password to
+      <br /> This social media application requires an email and password to
       experience properly. Please use the following demo login or feel free to
       register to create your own credentials. <br />
       <br /> Email: demo@yahoo.com <br /> Password: test1 <br />
