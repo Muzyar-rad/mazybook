@@ -5,10 +5,10 @@ import Joi from "joi-browser";
 import "../css/loginForm.css";
 
 class LoginForm extends Component {
-  state = { data: { username: "", password: "" }, errors: {} };
+  state = { data: { email: "", password: "" }, errors: {} };
 
   schema = {
-    username: Joi.string().required(),
+    email: Joi.string().required(),
     password: Joi.string().required()
   };
 
@@ -70,12 +70,12 @@ class LoginForm extends Component {
           <input
             className="User"
             type="text"
-            name="username"
+            name="email"
             onChange={this.changeHandler}
           />
           <div className="errorUser">
-            {errors["username"] && (
-              <div className="alert alert-danger">{errors["username"]}</div>
+            {errors["email"] && (
+              <div className="alert alert-danger">{errors["email"]}</div>
             )}
           </div>
           <p className="Pass">Password</p>

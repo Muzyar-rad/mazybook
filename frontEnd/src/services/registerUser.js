@@ -6,7 +6,7 @@ const deleteUserUrl = id => apiUrl + `/users/${id}`;
 
 export function register(user) {
   return http.post(registerUrl, {
-    email: user.username,
+    email: user.email,
     name: user.name,
     password: user.password
   });

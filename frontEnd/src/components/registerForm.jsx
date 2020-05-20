@@ -7,12 +7,12 @@ import "../css/registerForm.css";
 
 class RegisterForm extends Component {
   state = {
-    data: { username: "", password: "", name: "" },
+    data: { email: "", password: "", name: "" },
     errors: {}
   };
 
   schema = {
-    username: Joi.string()
+    email: Joi.string()
       .email()
       .required(),
     password: Joi.string()
@@ -78,12 +78,12 @@ class RegisterForm extends Component {
         <input
           className="userName"
           type="text"
-          name="username"
+          name="email"
           onChange={this.changeHandler}
         />
         <div className="errorUsername">
-          {errors["username"] && (
-            <div className="alert alert-danger">{errors["username"]}</div>
+          {errors["email"] && (
+            <div className="alert alert-danger">{errors["email"]}</div>
           )}
         </div>
 
