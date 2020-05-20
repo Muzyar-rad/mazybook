@@ -33,12 +33,20 @@ const NavBar = () => {
           {!user && (
             <React.Fragment>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/login">
+                <NavLink
+                  className="nav-link"
+                  style={{ color: "black" }}
+                  to="/login"
+                >
                   Login
                 </NavLink>
               </li>
               <li>
-                <NavLink className="nav-link" to="/register">
+                <NavLink
+                  className="nav-link"
+                  style={{ color: "black" }}
+                  to="/register"
+                >
                   Register
                 </NavLink>
               </li>
@@ -47,12 +55,20 @@ const NavBar = () => {
           {user && (
             <React.Fragment>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/profile">
+                <NavLink
+                  className="nav-link"
+                  style={{ color: "black" }}
+                  to="/profile"
+                >
                   {user.name}
                 </NavLink>
               </li>
               <li>
-                <NavLink className="nav-link" to="/logout">
+                <NavLink
+                  className="nav-link"
+                  style={{ color: "black" }}
+                  to="/logout"
+                >
                   Logout
                 </NavLink>
               </li>
