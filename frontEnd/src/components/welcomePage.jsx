@@ -10,7 +10,7 @@ const WelcomePage = props => {
       <br /> This social media application requires a username and password to
       experience properly. Please use the following demo login or feel free to
       register to create your own credentials. <br />
-      <br /> Email: demo <br /> Password: test <br />
+      <br /> Email: demo@yahoo.com <br /> Password: test1 <br />
       <br /> Thank you for visiting my application!
     </div>
   );
