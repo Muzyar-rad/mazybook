@@ -45,16 +45,21 @@ class AddPost extends Component {
             placeholder="Share your thoughts ..."
             onChange={this.changeHandler}
           ></textarea>
-          <i
-            className="fa fa-upload"
-            onClick={() => this.fileInput.click()}
-          ></i>
-          <input
-            style={{ display: "none" }}
-            type="file"
-            onChange={this.fileSelectedHandler}
-            ref={fileInput => (this.fileInput = fileInput)}
-          />
+          <div className="flexRow">
+            <i
+              className="fa fa-upload"
+              onClick={() => this.fileInput.click()}
+            ></i>
+            <div className="selected">
+              {this.state.postImage !== null ? "Selected!" : null}
+            </div>
+            <input
+              style={{ display: "none" }}
+              type="file"
+              onChange={this.fileSelectedHandler}
+              ref={fileInput => (this.fileInput = fileInput)}
+            />
+          </div>
           <button className="css">Post</button>
         </form>
       </div>

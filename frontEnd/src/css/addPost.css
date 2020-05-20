@@ -53,16 +53,24 @@ div.addpost > form.css > button.css {
 div.addpost > form.css > button.css:hover {
   cursor: pointer;
 }
+div.addpost > form.css > div.flexRow {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
 
-div.addpost > form.css > i {
-  margin-right: auto;
+div.addpost > form.css > div.flexRow > i {
   font-size: 150%;
   margin-top: 20px;
   margin-left: 30px;
 }
 
-div.addpost > form.css > i:hover {
+div.addpost > form.css > div.flexRow > i:hover {
   cursor: pointer;
+}
+div.addpost > form.css > div.flexRow > div.selected {
+  font-size: 120%;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -85,8 +93,7 @@ div.addpost > form.css > i:hover {
     width: 65px;
     height: 35px;
   }
-  div.addpost > form.css > i {
-    margin-right: auto;
+  div.addpost > form.css > div.flexRow > i {
     font-size: 150%;
     margin-top: 12px;
     margin-left: 12px;
