@@ -74,7 +74,7 @@ class RegisterForm extends Component {
     return (
       <form className="registerForm" onSubmit={this.submitHandler}>
         <h1>Sign Up</h1>
-        <p className="userName">Username</p>
+        <p className="userName">Email</p>
         <input
           className="userName"
           type="text"

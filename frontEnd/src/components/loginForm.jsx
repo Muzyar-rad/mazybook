@@ -66,7 +66,7 @@ class LoginForm extends Component {
       <div>
         <form className="loginCss" onSubmit={this.submitHandler}>
           <h1>Login</h1>
-          <p className="User">Username</p>
+          <p className="User">Email</p>
           <input
             className="User"
             type="text"
