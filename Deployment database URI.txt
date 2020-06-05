@@ -1,0 +1,1 @@
+"db": "postgres://fullStackProject:Ma2253372@localhost/fullStackProject"
