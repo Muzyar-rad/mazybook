@@ -4,7 +4,7 @@ import Avatar from "../media/avatar.png";
 import moment from "moment";
 import { getCurrentUser, logout } from "./../services/authService";
 import { getUser } from "./../services/registerUser";
-import "../css/profile.css";
+// import "../css/profile.css";
 
 class Profile extends Component {
   state = { user: {} };
@@ -36,19 +36,21 @@ class Profile extends Component {
   render() {
     const { user } = this.state;
     return (
-      <div className="profile">
-        <div className="flexRow1">
-          <h1>Profile</h1>
-          {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
-        </div>
-        <div className="flexRow2">
-          <img alt="Profile pic" src={Avatar} width="70" height="70" />
-          <div className="flexColumn">
-            <p className="name">{user.name}</p>
-            <p className="email">{user.email}</p>
+      <div className="card bg-light mt-5 mx-5 vh-50">
+        <div className="row-fluid">
+          <div className="">
+            <h1>Profile</h1>
+            {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
           </div>
+          <div className="">
+            <img alt="Profile pic" src={Avatar} width="70" height="70" />
+            <div className="">
+              <p className="">{user.name}</p>
+              <p className="">{user.email}</p>
+            </div>
+          </div>
+          <p className="">Created at {user.createdat}</p>
         </div>
-        <p className="createdat">Created at {user.createdat}</p>
       </div>
     );
   }
