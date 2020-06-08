@@ -21,23 +21,21 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <React.Fragment>
-          <Switch>
-            <Route
-              path="/welcome"
-              render={props => <WelcomePage {...props} user={user} />}
-            />
-            <Route path="/register" component={RegisterForm} />
-            <Route path="/login" component={LoginForm} />
-            <Route path="/logout" component={Logout} />
-            <Route path="/profile" component={Profile} />
-            <Route
-              path="/home"
-              render={props => <HomePage {...props} user={user} />}
-            />
-            <Redirect from="/" exact to="/welcome" />
-          </Switch>
-        </React.Fragment>
+        <Switch>
+          <Route
+            path="/welcome"
+            render={props => <WelcomePage {...props} user={user} />}
+          />
+          <Route path="/register" component={RegisterForm} />
+          <Route path="/login" component={LoginForm} />
+          <Route path="/logout" component={Logout} />
+          <Route path="/profile" component={Profile} />
+          <Route
+            path="/home"
+            render={props => <HomePage {...props} user={user} />}
+          />
+          <Redirect from="/" exact to="/welcome" />
+        </Switch>
       </div>
     );
   }
