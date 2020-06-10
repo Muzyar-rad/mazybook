@@ -6,7 +6,6 @@ import App from "./App";
 import "./index.css";
 import "font-awesome/css/font-awesome.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 
 ReactDOM.render(
   <BrowserRouter>
