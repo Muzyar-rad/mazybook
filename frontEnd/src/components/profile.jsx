@@ -36,21 +36,19 @@ class Profile extends Component {
   render() {
     const { user } = this.state;
     return (
-      <div className="card mx-auto mt-5 w-75 box">
-        <div className="row-fluid">
-          <div className="">
-            <h1>Profile</h1>
-            {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
-          </div>
-          <div className="">
-            <img alt="Profile pic" src={Avatar} width="70" height="70" />
-            <div className="">
-              <p className="">{user.name}</p>
-              <p className="">{user.email}</p>
-            </div>
-          </div>
-          <p className="">Created at {user.createdat}</p>
+      <div className="card mx-auto w-75 box">
+        <div className="d-flex flex-row">
+          <h1>Profile</h1>
+          {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
         </div>
+        <div className="d-flex flex-row">
+          <img alt="Profile pic" src={Avatar} width="70" height="70" />
+          <div className="d-flex flex-column justify-content-center">
+            <div className="">{user.name}</div>
+            <div className="">{user.email}</div>
+          </div>
+        </div>
+        <p className="">Created at {user.createdat}</p>
       </div>
     );
   }

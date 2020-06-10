@@ -2,6 +2,7 @@ div.box {
   background-color: #ccc;
   border-color: grey;
   height: 500px;
+  margin-top: 80px;
 }
 /* div.profile {
   background-color: #b4bbb8;
