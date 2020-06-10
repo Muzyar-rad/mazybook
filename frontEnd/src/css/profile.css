@@ -8,7 +8,7 @@ div.profile {
   font-size: 5vw;
 }
 img.css {
-  height: auto;
+  max-height: 100%;
   max-width: 15%;
 }
 div.username {
