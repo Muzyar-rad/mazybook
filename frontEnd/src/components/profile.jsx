@@ -38,17 +38,17 @@ class Profile extends Component {
     return (
       <div className="card mx-auto w-75 box">
         <div className="d-flex flex-row">
-          <h1>Profile</h1>
+          <div className=" profile mt-2 ml-3">Profile</div>
           {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
         </div>
         <div className="d-flex flex-row">
-          <img alt="Profile pic" src={Avatar} width="70" height="70" />
+          <img className="css" alt="Profile pic" src={Avatar} />
           <div className="d-flex flex-column justify-content-center">
-            <div className="">{user.name}</div>
-            <div className="">{user.email}</div>
+            <div className="username">{user.name}</div>
+            <div className="email">{user.email}</div>
           </div>
         </div>
-        <p className="">Created at {user.createdat}</p>
+        <div className="createdAt ml-4 mt-3">Created at {user.createdat}</div>
       </div>
     );
   }

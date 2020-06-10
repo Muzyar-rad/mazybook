@@ -1,8 +1,24 @@
 div.box {
   background-color: #ccc;
   border-color: grey;
-  height: 500px;
-  margin-top: 80px;
+  height: 450px;
+  margin-top: 60px;
+}
+div.profile {
+  font-size: 5vw;
+}
+img.css {
+  height: auto;
+  max-width: 20%;
+}
+div.username {
+  font-size: 3vw;
+}
+div.email {
+  font-size: 2vw;
+}
+div.createdAt {
+  font-size: 3vw;
 }
 /* div.profile {
   background-color: #b4bbb8;
@@ -58,7 +74,7 @@ div.profile > p.createdat {
   padding: 20px 2px 2px 92px;
 } */
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   div.profile {
     background-color: #b4bbb8;
     display: flex;
@@ -94,4 +110,4 @@ div.profile > p.createdat {
     font-size: 130%;
     padding: 20px 2px 2px 40px;
   }
-}
+} */
