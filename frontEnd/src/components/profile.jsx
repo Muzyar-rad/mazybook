@@ -38,7 +38,7 @@ class Profile extends Component {
     return (
       <div className="card mx-auto w-75 box">
         <div className="d-flex flex-row">
-          <div className=" profile mt-2 ml-3">Profile</div>
+          <div className=" profile mt-2 ml-3 mb-2">Profile</div>
           {/* <i className="fa fa-trash delete" onClick={this.deleteUser}></i> */}
         </div>
         <div className="d-flex flex-row">
