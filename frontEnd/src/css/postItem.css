@@ -24,6 +24,7 @@ div.post > div.User > div.flex {
   flex-direction: column;
 }
 div.post > div.User > div.flex > p.user {
+  font-weight: bold;
   margin-top: 4px;
   font-size: 90%;
 }

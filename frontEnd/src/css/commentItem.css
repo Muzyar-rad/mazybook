@@ -33,6 +33,7 @@ div.comment > div.flex > div.holder > div.flexRow {
   flex-direction: row;
 }
 div.comment > div.flex > div.holder > div.flexRow > p.user {
+  font-weight: bold;
   margin-left: 5px;
 }
 
