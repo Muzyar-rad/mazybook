@@ -4,7 +4,7 @@ import Avatar from "../media/avatar.png";
 import moment from "moment";
 import { getCurrentUser, logout } from "./../services/authService";
 import { getUser } from "./../services/registerUser";
-// import "../css/profile.css";
+import "../css/profile.css";
 
 class Profile extends Component {
   state = { user: {} };
@@ -36,7 +36,7 @@ class Profile extends Component {
   render() {
     const { user } = this.state;
     return (
-      <div style={{ height: "500px" }} className="card bg-light mx-auto w-75">
+      <div className="card mx-auto mt-5 w-75 box">
         <div className="row-fluid">
           <div className="">
             <h1>Profile</h1>
