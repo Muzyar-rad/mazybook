@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "unsecurekey",
-  "db": "postgres://fullStackProject:Ma2253372@localhost/fullStackProject",
+  "db": "postgressql://postgres:Ma2253372@localhost:5432/social_media",
   "port": "3200",
   "requiresAuth": true
 }
