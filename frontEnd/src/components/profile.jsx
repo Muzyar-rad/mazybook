@@ -36,7 +36,7 @@ class Profile extends Component {
   render() {
     const { user } = this.state;
     return (
-      <div className="card bg-light mt-5 mx-5 vh-50">
+      <div style={{ height: "500px" }} className="card bg-light mx-auto w-75">
         <div className="row-fluid">
           <div className="">
             <h1>Profile</h1>

@@ -1,4 +1,4 @@
-div.profile {
+/* div.profile {
   background-color: #b4bbb8;
   display: flex;
   flex-direction: column;
@@ -50,9 +50,9 @@ div.profile > div.flexRow2 > div.flexColumn > p.email {
 div.profile > p.createdat {
   font-size: 120%;
   padding: 20px 2px 2px 92px;
-}
+} */
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   div.profile {
     background-color: #b4bbb8;
     display: flex;
@@ -88,4 +88,4 @@ div.profile > p.createdat {
     font-size: 130%;
     padding: 20px 2px 2px 40px;
   }
-} */
+}
