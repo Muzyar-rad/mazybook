@@ -98,11 +98,12 @@ class LoginForm extends Component {
           </div>
           <div className="flexButton">
             <button className="btn-info btn-lg mt-5 mr-2">Login</button>
-            <form onSubmit={this.submitDemo}>
-              <button className="btn-info btn-lg mt-5 ml-2">
-                Login as Demo
-              </button>
-            </form>
+            <button
+              className="btn-info btn-lg mt-5 ml-2"
+              onClick={this.submitDemo}
+            >
+              Login as Demo
+            </button>
           </div>
         </form>
       </div>
