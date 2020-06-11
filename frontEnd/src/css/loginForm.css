@@ -24,5 +24,10 @@ form > input.Pass {
 form > div.errorPass {
   margin-bottom: -20px;
 }
+
+form > div.flexButton {
+  display: flex;
+  flex-direction: row;
+}
 @media only screen and (max-width: 600px) {
 }

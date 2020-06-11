@@ -59,6 +59,12 @@ class LoginForm extends Component {
       }
     }
   };
+
+  submitDemo = async event => {
+    event.preventDefault();
+    await auth.login({ email: "demo@yahoo.com", password: "test1" });
+    window.location = "/home";
+  };
   render() {
     if (auth.getCurrentUser()) return <Redirect to="/home" />;
     const { errors } = this.state;
@@ -90,7 +96,10 @@ class LoginForm extends Component {
               <div className="alert alert-danger">{errors["password"]}</div>
             )}
           </div>
-          <button className="btn-info btn-lg mt-5">Login</button>
+          <div className="flexButton">
+            <button className="btn-info btn-lg mt-5 mr-2">Login</button>
+            <button className="btn-info btn-lg mt-5 ml-2">Login as Demo</button>
+          </div>
         </form>
       </div>
     );
