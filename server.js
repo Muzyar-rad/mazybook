@@ -9,5 +9,3 @@ require("./startup/queries")(app);
 
 const port = process.env.port || config.get("port");
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-//changing the backend
