@@ -52,3 +52,5 @@ router.post("/", async (req, res) => {
 });
 
 module.exports = router;
+
+//adding the users API
