@@ -54,7 +54,7 @@ class LoginForm extends Component {
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };
-        errors.username = ex.response.data;
+        errors.email = ex.response.data;
         this.setState({ errors });
       }
     }
