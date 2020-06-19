@@ -5,7 +5,7 @@ const { pool } = require("../startup/db");
 
 router.get("/", async (req, res) => {
   const { rows } = await pool.query(
-    'SELECT "Comment".*, "User".name FROM "Comment" INNER JOIN "User" ON "Comment".userid = "User".userid '
+    'SELECT "Comment".*, "User".name FROM "Comment" INNER JOIN "User" ON "Comment".userid = "User".userid ORDER BY commentid DESC'
   );
   res.status(200).send(rows);
 });
