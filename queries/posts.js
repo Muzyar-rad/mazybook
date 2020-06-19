@@ -34,7 +34,7 @@ const upload = multer({
 
 router.get("/", async (req, res) => {
   const { rows } = await pool.query(
-    'SELECT "Post".postid,"Post".text,"Post"."postImage","Post"."createdAt","User".userid,"User".name FROM "Post" LEFT JOIN "User" ON "Post".userid = "User".userid;'
+    'SELECT "Post".postid,"Post".text,"Post"."postImage","Post"."createdAt","User".userid,"User".name FROM "Post" LEFT JOIN "User" ON "Post".userid = "User".userid ORDER BY postid DESC;'
   );
   res.status(200).send(rows);
 });
