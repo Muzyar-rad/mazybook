@@ -63,7 +63,7 @@ div.comment > div.flex > div.holder > p.commentDate {
   background-color: white;
   color: grey;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   div.comment > div.flex > img {
     margin: auto;
     width: 30px;

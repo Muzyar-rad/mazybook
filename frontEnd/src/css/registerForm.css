@@ -28,5 +28,3 @@ form.registerForm > input.name {
 form.registerForm > div.errorName {
   margin-bottom: -20px;
 }
-@media only screen and (max-width: 600px) {
-}

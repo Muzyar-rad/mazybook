@@ -73,7 +73,7 @@ div.addpost > form.css > div.flexRow > div.selected {
   margin-left: 20px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   div.addpost {
     background-color: #b4bbb8;
     display: flex;
