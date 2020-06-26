@@ -26,9 +26,9 @@ Try the application live at http://mazybook.muzyar-rad.com
 
 ## Preview
 
-![mazybook1](readme_gif/mazybook1.gif)
-![mazybook2](readme_gif/mazybook2.gif)
-![mazybook3](readme_gif/mazybook3.gif)
+![mazybook1](readme_gif/mazybook11.gif)
+![mazybook2](readme_gif/mazybook22.gif)
+![mazybook3](readme_gif/mazybook33.gif)
 
 ## Colaborator
 
