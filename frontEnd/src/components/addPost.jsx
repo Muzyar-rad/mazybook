@@ -68,5 +68,3 @@ class AddPost extends Component {
 }
 
 export default AddPost;
-
-//I am changing
