@@ -38,7 +38,7 @@ router.get("/", async (req, res) => {
   );
   res.status(200).send(rows);
 });
-
+('Select * from "Post"');
 router.get("/:id", async (req, res) => {
   const { id } = req.params;
   const { rows } = await pool.query('SELECT * FROM "Post" WHERE postid = $1', [
