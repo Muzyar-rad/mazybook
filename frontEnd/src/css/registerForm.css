@@ -28,3 +28,7 @@ form.registerForm > input.name {
 form.registerForm > div.errorName {
   margin-bottom: -20px;
 }
+
+form.registerForm > div.errorName {
+  margin-bottom: -20px;
+}
