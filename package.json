@@ -21,7 +21,7 @@
     "joi": "^14.3.1",
     "jquery": "^3.5.1",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "multer": "^1.4.2",
     "pg": "^7.18.1",
     "react-bootstrap": "^1.0.1"
