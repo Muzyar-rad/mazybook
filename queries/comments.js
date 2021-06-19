@@ -12,10 +12,9 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   const { id } = req.params;
-  const { rows } = await pool.query(
-    'SELECT * FROM "Comment" WHERE commentid = $1',
-    [id]
-  );
+  const {
+    rows,
+  } = await pool.query('SELECT * FROM "Comment" WHERE commentid = $1', [id]);
   res.status(200).send(rows[0]);
 });
 
@@ -25,7 +24,9 @@ router.post("/", async (req, res) => {
     return res
       .sendStatus(403)
       .send("Exceeding the number of characters allowed for comment");
-  const { rows } = await pool.query(
+  const {
+    rows,
+  } = await pool.query(
     'INSERT INTO "Comment" (userid,postid,"textComment") VALUES ($1,$2,$3) RETURNING postid',
     [userid, postid, textComment]
   );
@@ -34,10 +35,9 @@ router.post("/", async (req, res) => {
 
 router.delete("/:id", [auth], async (req, res) => {
   const { id } = req.params;
-  const { rows } = await pool.query(
-    'SELECT userid FROM "Comment" WHERE commentid=$1',
-    [id]
-  );
+  const {
+    rows,
+  } = await pool.query('SELECT userid FROM "Comment" WHERE commentid=$1', [id]);
   if (req.user.userid !== rows[0].userid)
     return res
       .status(403)
@@ -51,7 +51,7 @@ router.patch("/:id", async (req, res) => {
   const { textComment } = req.body;
   await pool.query('UPDATE "Comment" SET textComment=$1 WHERE commentid=$2', [
     textComment,
-    id
+    id,
   ]);
   res.status(200).send("Comment has been updated");
 });

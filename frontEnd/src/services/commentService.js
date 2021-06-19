@@ -6,6 +6,7 @@ const commentUrl = apiUrl + "/comments";
 export async function saveComment(comment) {
   return await http.post(commentUrl, comment);
 }
+
 export async function getComments() {
   return await http.get(commentUrl);
 }

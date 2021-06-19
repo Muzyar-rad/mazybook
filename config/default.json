@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "unsecurekey",
-  "db": "postgres://fullStackProject:Ma2253372@localhost/fullStackProject",
+  "db": "postgres://postgres:Ma2253372@localhost/mazybook",
   "port": "3200",
   "requiresAuth": true
 }
