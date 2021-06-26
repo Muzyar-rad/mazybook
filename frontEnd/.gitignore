@@ -8,6 +8,8 @@
 # production
 /build
 
+# config info
+/config
 # misc
 .DS_Store
 .env.local
